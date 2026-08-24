@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce checkout</title>
+    <link rel="stylesheet" href="../css/global.css" />
+
+    <link rel="stylesheet" href="/css/chekout.css" />
+  </head>
+  <body>
+    <!-- --- HEADER ----- -->
+    <div id="target-header"></div>
+
+    <!-- main content -->
+    <div class="main-container">
+      <!-- left section -->
+      <div class="left-section">
+        <div class="links">
+          <a href="">Account</a>
+          <a href="">/ My account</a>
+          <a href="">/ Product</a>
+          <a href="">/ View Cart</a>
+          <a href="">/ Checkout</a>
+        </div>
+
+        <h1>Building Details</h1>
+        <!-- form -->
+        <form action="">
+          <div class="fields">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="fields">
+            <label for="name">Company Name</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="fields">
+            <label for="name">Street address</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="fields">
+            <label for="name">Apartment floor etc.</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="fields">
+            <label for="name">Town/city</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="fields">
+            <label for="name">Phone No</label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="fields">
+            <label for="name">Email</label>
+            <input type="email" name="name" />
+          </div>
+
+          <div class="fields check">
+            <input type="checkbox" name="" id="" />
+            <p>Save this information for faster checkout next time</p>
+          </div>
+        </form>
+      </div>
+
+      <div class="checkout-right">
+        <!-- Products -->
+        <div class="products">
+          <img src="/icons/product-image.png" alt="" />
+        </div>
+
+        <!-- Price Details -->
+        <div class="price-details">
+          <div class="price-row">
+            <span>Subtotal:</span>
+            <span>$1750</span>
+          </div>
+
+          <div class="price-row">
+            <span>Shipping:</span>
+            <span>Free</span>
+          </div>
+
+          <div class="price-row total-row">
+            <span>Total:</span>
+            <span>$1750</span>
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="payment-method">
+          <div class="payment-option">
+            <input type="radio" name="payment" id="bank" />
+            <label for="bank">Bank</label>
+            <img src="/icons/bank-accounts.png" alt="" class="payment-logos" />
+          </div>
+
+          <div class="payment-option">
+            <input type="radio" name="payment" id="cod" />
+            <label for="cod">Cash on delivery</label>
+          </div>
+        </div>
+
+        <!-- Coupon -->
+        <div class="coupon-section">
+          <input type="text" placeholder="Coupon Code" />
+
+          <button type="button">Apply Coupon</button>
+        </div>
+
+        <!-- Order Button -->
+        <button class="place-order-btn">Place Order</button>
+      </div>
+    </div>
+
+    <!-- --- FOOTER ----- -->
+    <div id="target-footer"></div>
+    <script src="../js/global.js"></script>
+    <script>
+      fetch("../components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("target-header").innerHTML = data;
+          setupNavbarEvents();
+        })
+        .catch((error) => console.error("Error loading HTML:", error));
+      fetch("../components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("target-footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Detials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <!-- navbar don't change this  -->
+    <div id="target-header"></div>
+
+
+    <div class="min-h-screen bg-white py-10 px-4 sm:px-10 lg:px-20 font-sans">
+
+        <nav class="text-sm text-gray-400 mb-16">
+            <span>Product</span> <span class="mx-2">/</span>
+            <span>Phones</span> <span class="mx-2">/</span>
+            <span class="text-black font-medium">Iphone</span>
+        </nav>
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="hidden lg:flex flex-col gap-4 lg:col-span-2">
+
+                <div
+                    class="bg-gray-100 p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-2.png' alt="thumb" class="w-full object-contain" />
+                </div>
+                <div
+                    class="bg-gray-100 p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-3.png' alt="thumb" class="w-full object-contain" />
+                </div>
+                <div
+                    class="bg-gray-100 p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-4.png' alt="thumb" class="w-full object-contain" />
+                </div>
+                <div
+                    class="bg-gray-100 p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-5.png' alt="thumb" class="w-full object-contain" />
+                </div>
+
+            </div>
+
+            <div class=" lg:col-span-5 bg-gray-100 p-10 rounded-md flex items-center justify-center sm:h-80 lg:h-125 md:min-h-[600px]">
+                <img src="../images/game-device-1.png" alt="Main Gamepad" class="max-h-full object-contain" />
+            </div>
+
+             <div class=" lg:hidden grid grid-cols-12 gap-4 lg:col-span-2">
+
+                <div
+                    class="bg-gray-100 col-span-3 p-2 sm:p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-2.png' alt="thumb" class="w-full object-contain" />
+                </div>
+                <div
+                    class="bg-gray-100 col-span-3 p-2 sm:p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-3.png' alt="thumb" class="w-full object-contain" />
+                </div>
+                <div
+                    class="bg-gray-100 col-span-3 p-2 sm:p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-4.png' alt="thumb" class="w-full object-contain" />
+                </div>
+                <div
+                    class="bg-gray-100 col-span-3 p-2 sm:p-4 rounded flex items-center justify-center cursor-pointer hover:ring-1 ring-gray-300">
+                    <img src='../images/game-device-5.png' alt="thumb" class="w-full object-contain" />
+                </div>
+
+            </div>
+
+
+            <div class="lg:col-span-5 px-0 lg:px-4">
+                <h1 class="text-2xl font-semibold tracking-wide mb-3">
+                    iphone 11
+                </h1>
+
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="flex text-yellow-400">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <span class="text-gray-400 text-sm">(150 Reviews)</span>
+                    <span class="text-gray-300">|</span>
+                    <span class="text-green-400 text-sm">
+                        In Stock
+                    </span>
+                </div>
+
+                <p class="text-2xl font-medium mb-4">$120.00</p>
+
+                <div class="text-sm text-slate-600 leading-relaxed border-b border-gray-300 pb-6 mb-6">
+                    The Apple iPhone 11 is a popular smartphone featuring a 6.1-inch Liquid Retina display and powered
+                    by the fast A13.
+                </div>
+
+
+
+                <div class="space-y-6">
+
+                    <div class="flex items-center gap-4">
+                        <span class="text-lg">Colours:</span>
+                        <div class="flex gap-2">
+
+                            <button title="green" style="background-color: green;" class="w-5 h-5 rounded-full border border-gray-300 transition-transform active:scale-90 
+                        cursor-pointer hover:ring-2 ring-offset-2 ring-black ring-2 ring-offset-2 ring-black">
+
+                            </button>
+
+                            <button title="green" style="background-color: orange;" class="w-5 h-5 rounded-full border border-gray-300 transition-transform active:scale-90 
+                        cursor-pointer hover:ring-2 ring-offset-2 ring-black">
+
+                            </button>
+
+                            <button title="green" style="background-color: rgb(79, 79, 252);" class="w-5 h-5 rounded-full border border-gray-300 transition-transform active:scale-90 
+                        cursor-pointer hover:ring-2 ring-offset-2 ring-black">
+
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <span class="text-lg">Size:</span>
+                        <div class="flex gap-3">
+
+                            <button key={size.name} title="large size"
+                                class="w-10 h-8 text-sm border rounded flex items-center justify-center font-medium transition-colors ">
+                                XS
+                            </button>
+
+                            <button key={size.name} title="large size"
+                                class="w-10 h-8 text-sm border rounded flex items-center justify-center font-medium transition-colors ">
+                                S
+                            </button>
+
+                            <button key={size.name} title="large size"
+                                class="w-10 h-8 text-sm border rounded flex items-center justify-center font-medium transition-colors bg-red-500 text-white border-red-500">
+                                M
+                            </button>
+
+                            <button key={size.name} title="large size"
+                                class="w-10 h-8 text-sm border rounded flex items-center justify-center font-medium transition-colors ">
+                                L
+                            </button>
+
+                            <button key={size.name} title="large size"
+                                class="w-10 h-8 text-sm border rounded flex items-center justify-center font-medium transition-colors ">
+                                XL
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="flex items-center border border-gray-400 rounded overflow-hidden">
+                            <button class="p-2 px-3 hover:bg-gray-100 border-r border-gray-400">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 12H4" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+
+                            </button>
+                            <span class="px-6 font-bold">2</span>
+                            <button class="p-2 px-3 bg-red-500 text-white hover:bg-red-600">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 20V12M12 12V4M12 12H20M12 12H4" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+
+                            </button>
+                        </div>
+
+
+
+                        <button
+                            class="bg-red-500 max-w-fit sm:max-w-[150px] hover:bg-red-600 text-white px-2 py-2 sm:px-10  sm:py-2 rounded font-medium transition-colors grow lg:grow-0">
+                            Buy Now
+                        </button>
+
+                        <button
+                            class="p-1 border border-gray-300 rounded hover:bg-gray-50 transition-colors cursor-pointer">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 7C8.239 7 6 9.216 6 11.95C6 14.157 6.875 19.395 15.488 24.69C15.6423 24.7839 15.8194 24.8335 16 24.8335C16.1806 24.8335 16.3577 24.7839 16.512 24.69C25.125 19.395 26 14.157 26 11.95C26 9.216 23.761 7 21 7C18.239 7 16 10 16 10C16 10 13.761 7 11 7Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
+                    </div>
+
+
+                    <div class="border border-gray-300 rounded-md mt-10 max-w-sm">
+                        <div class="flex items-center gap-4 p-4 border-b border-gray-300">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_261_4843)">
+                                    <path
+                                        d="M11.6673 31.6667C13.5083 31.6667 15.0007 30.1743 15.0007 28.3333C15.0007 26.4924 13.5083 25 11.6673 25C9.82637 25 8.33398 26.4924 8.33398 28.3333C8.33398 30.1743 9.82637 31.6667 11.6673 31.6667Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M28.3333 31.6667C30.1743 31.6667 31.6667 30.1743 31.6667 28.3333C31.6667 26.4924 30.1743 25 28.3333 25C26.4924 25 25 26.4924 25 28.3333C25 30.1743 26.4924 31.6667 28.3333 31.6667Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.33398 28.3335H7.00065C5.89608 28.3335 5.00065 27.4381 5.00065 26.3335V21.6668M3.33398 8.3335H19.6673C20.7719 8.3335 21.6673 9.22893 21.6673 10.3335V28.3335M15.0007 28.3335H25.0007M21.6673 10.0002H28.8683C29.5708 10.0002 30.2218 10.3688 30.5833 10.9712L35.0007 18.3335V26.3335C35.0007 27.4381 34.1052 28.3335 33.0007 28.3335H31.6673M35.0007 18.3335H21.6673"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8 28H6.66667C5.5621 28 4.66667 27.1046 4.66667 26V21.3333M3 8H19.3333C20.4379 8 21.3333 8.89543 21.3333 10V28M15 28H24.6667M21.3333 9.66667H28.5343C29.2368 9.66667 29.8878 10.0353 30.2493 10.6377L34.6667 18V26C34.6667 27.1046 33.7712 28 32.6667 28H32M34.6667 18H21.3333"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M5 11.8182H11.6667" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1.81836 15.4545H8.48503" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M5 19.0909H11.6667" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_261_4843">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div>
+                                <p class="font-medium">Free Delivery</p>
+                                <p class="text-xs underline cursor-pointer">
+                                    Enter your postal code for Delivery Availability
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_261_4865)">
+                                    <path
+                                        d="M33.3327 18.3334C32.9251 15.4004 31.5645 12.6828 29.4604 10.5992C27.3564 8.51557 24.6256 7.18155 21.6888 6.80261C18.752 6.42366 15.7721 7.02082 13.208 8.5021C10.644 9.98337 8.6381 12.2666 7.49935 15M6.66602 8.33335V15H13.3327"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M6.66602 21.6667C7.07361 24.5997 8.43423 27.3173 10.5383 29.4009C12.6423 31.4845 15.3731 32.8185 18.3099 33.1974C21.2467 33.5764 24.2266 32.9792 26.7907 31.4979C29.3547 30.0167 31.3606 27.7335 32.4994 25M33.3327 31.6667V25H26.666"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_261_4865">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <div>
+                                <p class="font-medium">Return Delivery</p>
+                                <p class="text-xs">
+                                    Free 30 Days Delivery Returns
+                                    <span class="underline cursor-pointer">Details</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- related product  section -->
+
+            <section class="max-w-[1188px] mx-auto px-4 py-10 mt-[70px]">
+        <p class="text-red-500 text-lg font-semibold">
+            <span class="bg-red-500 px-1">|</span>
+            Related item
+        </p>
+        <div class="flex items-center justify-between mb-6">
+            <div>
+            </div>
+
+            <div class="flex gap-2">
+                <button class="flash-prev w-9 h-9 rounded-full text-xl bg-slate-100 flex items-center justify-center">
+                    ‹
+                </button>
+                <button class="flash-next w-9 h-9 rounded-full text-xl bg-slate-100 flex items-center justify-center">
+                    ›
+                </button>
+            </div>
+        </div>
+
+        <div class="relative overflow-x-auto overflow-y-hidden scrollbar-hide">
+            <div class="flex gap-6 pb-4 w-max">
+
+                <div class="w-[270px] group flex-shrink-0">
+                    <div class="relative bg-gray-100 rounded-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="HAVIT HV-G92 Gamepad"
+                            class="w-full h-[250px] object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <span
+                            class="absolute top-3 left-3 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded">-40%</span>
+                        <span class="absolute top-3 right-3 text-sm"><img src="../icons/love.svg"></span>
+                        <span class="absolute top-14 right-3 text-sm"><img src="../icons/eye.svg"></span>
+                        <button
+                            class="hidden absolute bottom-0 bg-black/90 text-[14px] text-white py-3  w-[100%] text-sm group-hover:block">Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-gray-800 text-sm">TACTX TV-S92 Shoes</h3>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-red-500 font-semibold">$120</span>
+                        <span class="text-gray-400 text-sm line-through">$160</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <div class="flex text-yellow-600 text-sm">★★★★☆</div>
+                        <span class="text-gray-400 text-sm">(88)</span>
+                    </div>
+                </div>
+
+                <div class="w-[270px] group flex-shrink-0">
+                    <div class="relative bg-gray-100 rounded-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1552879948-16c32e175ae5?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="AK-900 Wired Keyboard"
+                            class="w-full h-[250px] object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-3 right-3 text-sm"><img src="../icons/love.svg"></span>
+                        <span class="absolute top-14 right-3 text-sm"><img src="../icons/eye.svg"></span>
+                        <button
+                            class="hidden absolute bottom-0 bg-black/90 text-[14px] text-white py-3  w-[100%] text-sm group-hover:block">Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-gray-800 text-sm">AK-900 Wired Drink</h3>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-red-500 font-semibold">$960</span>
+                        <span class="text-gray-400 text-sm line-through">$1160</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <div class="flex text-yellow-600 text-sm">★★★★☆</div>
+                        <span class="text-gray-400 text-sm">(78)</span>
+                    </div>
+                </div>
+
+                <div class="w-[270px] group flex-shrink-0">
+                    <div class="relative bg-gray-100 rounded-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="IPS LCD Gaming Monitor"
+                            class="w-full h-[250px] object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-3 right-3 text-sm"><img src="../icons/love.svg"></span>
+                        <span class="absolute top-14 right-3 text-sm"><img src="../icons/eye.svg"></span>
+                        <button
+                            class="hidden absolute bottom-0 bg-black/90 text-[14px] text-white py-3  w-[100%] text-sm group-hover:block">Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-gray-800 text-sm">IPS HBK Girl shoes</h3>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-red-500 font-semibold">$370</span>
+                        <span class="text-gray-400 text-sm line-through">$400</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <div class="flex text-yellow-600 text-sm">★★★★☆</div>
+                        <span class="text-gray-400 text-sm">(99)</span>
+                    </div>
+                </div>
+
+                <div class="w-[270px] group flex-shrink-0">
+                    <div class="relative bg-gray-100 rounded-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1622711321771-4a00d2bc0350?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="S-Series Comfort Chair"
+                            class="w-full h-[250px] object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-3 right-3 text-sm"><img src="../icons/love.svg"></span>
+                        <span class="absolute top-14 right-3 text-sm"><img src="../icons/eye.svg"></span>
+                        <button
+                            class="hidden absolute bottom-0 bg-black/90 text-[14px] text-white py-3  w-[100%] text-sm group-hover:block">Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-gray-800 text-sm">S-Series Milk Fruit</h3>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-red-500 font-semibold">$375</span>
+                        <span class="text-gray-400 text-sm line-through">$400</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <div class="flex text-yellow-600 text-sm">★★★★☆</div>
+                        <span class="text-gray-400 text-sm">(99)</span>
+                    </div>
+                </div>
+
+                <div class="w-[270px] group flex-shrink-0">
+                    <div class="relative bg-gray-100 rounded-lg overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1630552352899-0ff485109562?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="S-Series Comfort Chair"
+                            class="w-full h-[250px] object-cover group-hover:scale-105 transition-transform duration-300" />
+                        <span
+                            class="absolute top-3 left-3 bg-red-500 text-white text-sm font-semibold px-3 py-1 rounded">-25%</span>
+                        <span class="absolute top-3 right-3 text-sm"><img src="../icons/love.svg"></span>
+                        <span class="absolute top-14 right-3 text-sm"><img src="../icons/eye.svg"></span>
+                        <button
+                            class="hidden absolute bottom-0 bg-black/90 text-[14px] text-white py-3  w-[100%] text-sm group-hover:block">Add
+                            to Cart</button>
+                    </div>
+                    <h3 class="mt-4 font-semibold text-gray-800 text-sm">D-Series Hair Shampo</h3>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span class="text-red-500 font-semibold">$375</span>
+                        <span class="text-gray-400 text-sm line-through">$400</span>
+                    </div>
+                    <div class="flex items-center gap-2 mt-1">
+                        <div class="flex text-yellow-600 text-sm">★★★★☆</div>
+                        <span class="text-gray-400 text-sm">(99)</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+       
+    </section>
+
+    </div>
+
+
+
+    <!-- footer don't change this  -->
+    <div id="target-footer"></div>
+    <script src="../js/global.js"></script>
+    <script>
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('target-header').innerHTML = data;
+                setupNavbarEvents();
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+        fetch('../components/footer.html').then(response => response.text()).then(data => {
+            document.getElementById('target-footer').innerHTML = data;
+        })
+    </script>
+</body>
+
+</html>

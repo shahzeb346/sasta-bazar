@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce account</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+      .account {
+        margin: auto 90px 0 auto;
+
+        width: 100%;
+        display: flex;
+      }
+
+      /* Left Side */
+
+      .sidebar {
+        height: 100vh;
+        width: 40%;
+        padding-top: 40px;
+        padding-left: 30px;
+      }
+
+      .sidebar .links {
+        display: flex;
+        margin-bottom: 40px;
+      }
+
+      .sidebar h3 {
+        font-size: 14px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+      }
+
+      .sidebar a {
+        display: block;
+        text-decoration: none;
+        color: #777;
+        font-size: 13px;
+        margin: 8px 0 12px 24px;
+      }
+
+      .sidebar a.active {
+        color: #e54545;
+      }
+
+      /* Right Side */
+
+      .profile {
+        width: 100%;
+        padding: 30px 55px;
+        margin-top: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .profile h2 {
+        color: #e54545;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 18px;
+      }
+
+      .row {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 28px;
+      }
+
+      .field {
+        width: 100%;
+      }
+
+      .field label,
+      .password label {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 7px;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        background: #f5f5f5;
+        padding: 10px 12px;
+        outline: none;
+        font-size: 12px;
+      }
+
+      .password input {
+        display: block;
+        margin-bottom: 19px;
+      }
+
+      /* Buttons */
+
+      .buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 25px;
+        margin-top: 35px;
+      }
+
+      .cancel {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        background: rgb(228, 227, 227);
+        font-size: 13px;
+        cursor: pointer;
+      }
+
+      .save {
+        width: 148px;
+        height: 39px;
+        border: none;
+        border-radius: 3px;
+        background: #e54545;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+      }
+
+      .account-dropdown {
+        display: none;
+      }
+
+      .account-dropdown-btn {
+        border: none;
+        background: white;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 10px 15px;
+      }
+
+      .account-dropdown-btn span {
+        margin-left: 8px;
+        font-size: 10px;
+      }
+
+      .account-dropdown-content {
+        display: none;
+      }
+
+      /* responsive */
+
+      /* 750px and below */
+      @media (max-width: 750px) {
+        .account {
+          margin: 0;
+          display: block;
+        }
+
+        /* Hide normal sidebar */
+        .sidebar {
+          display: none;
+        }
+
+        /* Dropdown container */
+        .account-dropdown {
+          display: block;
+          position: relative;
+          width: 100%;
+          text-align: right;
+          padding: 10px 20px;
+          border: 2px solid;
+        }
+
+        /* Dropdown button */
+        .account-dropdown-btn {
+          background: #f5f5f5;
+          padding: 10px 15px;
+          border-radius: 4px;
+        }
+
+        /* Dropdown content */
+        .account-dropdown-content {
+          position: absolute;
+          top: 55px;
+          right: 20px;
+          padding: 30px;
+          background: white;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+          text-align: left;
+        }
+
+        .show {
+          display: block;
+        }
+
+        .account-dropdown-content h3 {
+          font-size: 14px;
+          margin: 10px 0;
+        }
+
+        .account-dropdown-content a {
+          display: block;
+          text-decoration: none;
+          color: #777;
+          font-size: 13px;
+          margin: 8px 0 12px 15px;
+        }
+
+        .account-dropdown-content a.active {
+          color: #e54545;
+        }
+
+        .profile {
+          width: 100%;
+          margin-top: 20px;
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="target-header"></div>
+
+    <!-- main content -->
+
+    <div class="account-dropdown">
+      <button class="account-dropdown-btn" onclick="toggleAccountDropdown()">
+        My Account <span>▼</span>
+      </button>
+
+      <div class="account-dropdown-content">
+        <h3>Manage My Account</h3>
+
+        <a class="active" href="#">My Profile</a>
+        <a href="#">Address Book</a>
+        <a href="#">My Payment Options</a>
+
+        <h3>My Orders</h3>
+
+        <a href="#">My Returns</a>
+        <a href="#">My Cancellations</a>
+
+        <h3>My WishList</h3>
+      </div>
+    </div>
+
+    <div class="account">
+      <div class="account">
+        <!-- Left Side -->
+        <div class="sidebar">
+          <div class="links">
+            <a href="">Home </a>
+            <a href="">/ My account</a>
+          </div>
+          <h3>Manage My Account</h3>
+
+          <a class="active" href="#">My Profile</a>
+          <a href="#">Address Book</a>
+          <a href="#">My Payment Options</a>
+
+          <h3>My Orders</h3>
+
+          <a href="#">My Returns</a>
+          <a href="#">My Cancellations</a>
+
+          <h3>My WishList</h3>
+        </div>
+
+        <!-- Right Side -->
+        <div class="profile">
+          <h2>Edit Your Profile</h2>
+
+          <form>
+            <div class="row">
+              <div class="field">
+                <label>First Name</label>
+                <input type="text" value="Md" />
+              </div>
+
+              <div class="field">
+                <label>Last Name</label>
+                <input type="text" value="Rimel" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label>Email</label>
+                <input type="email" value="rimel111@gmail.com" />
+              </div>
+
+              <div class="field">
+                <label>Address</label>
+                <input type="text" value="Kingston, 5236, United State" />
+              </div>
+            </div>
+
+            <div class="password">
+              <label>Password Changes</label>
+
+              <input type="password" placeholder="Current Password" />
+
+              <input type="password" placeholder="New Password" />
+
+              <input type="password" placeholder="Confirm New Password" />
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="cancel">Cancel</button>
+              <button type="submit" class="save">Save Changes</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="target-footer"></div>
+    <script src="../js/global.js"></script>
+    <script>
+      fetch("../components/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("target-header").innerHTML = data;
+          setupNavbarEvents();
+        })
+        .catch((error) => console.error("Error loading HTML:", error));
+      fetch("../components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("target-footer").innerHTML = data;
+        });
+
+      // make a dropdown
+      const dropdown = document.querySelector(".account-dropdown-content");
+      const dropdown_btn = document.querySelector(".account-dropdown-btn");
+
+      function toggleAccountDropdown() {
+        dropdown.classList.toggle("show");
+      }
+
+      document.addEventListener("click", (evt) => {
+        if (
+          dropdown.classList.contains("show") &&
+          !dropdown.contains(evt.target) &&
+          !dropdown_btn.contains(evt.target)
+        ) {
+          dropdown.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>

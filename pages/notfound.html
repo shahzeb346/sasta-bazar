@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce notfund</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <div id="target-header"></div>
+
+    <div class="mx-auto items-center w-full max-w-[1170px] mb-0 mt-10">
+        <p class="ml-[20px]">Home/404 error</p>
+    </div>
+    <section
+    class="w-full max-w-[829px] min-h-[50vh]
+           mx-auto
+           flex items-center justify-center
+           px-4 sm:px-6"
+>
+    <div class="text-center">
+        <h1
+            class="font-medium
+                   text-[55px]
+                   sm:text-[75px]
+                   md:text-[90px]
+                   lg:text-[110px]
+                   whitespace-nowrap"
+        >
+            404 Not Found
+        </h1>
+        <p
+            class="mt-4
+                   text-[13px]
+                   sm:text-[14px]
+                   md:text-[16px]"
+        >
+            Your visited page not found. you may go home
+        </p>
+
+        <button
+            class="mt-8 sm:mt-10 lg:mt-12
+                   w-full
+                   max-w-[254px]
+                   h-[50px]
+                   sm:h-[56px]
+                   rounded
+                   bg-[#DB4444]
+                   text-white
+                   text-sm
+                   hover:bg-[#c93636]
+                   transition duration-200"
+        >
+            Back to home page
+        </button>
+
+    </div>
+</section>
+
+
+    <div id="target-footer"></div>
+    <script src="../js/global.js"></script>
+    <script>
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('target-header').innerHTML = data;
+                setupNavbarEvents();
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+        fetch('../components/footer.html').then(response => response.text()).then(data => {
+            document.getElementById('target-footer').innerHTML = data;
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce whishlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <div id="target-header"></div>
+    
+<main class="w-full max-w-[1100px] mx-auto px-4 sm:px-5 lg:px-6 py-6 sm:py-8">
+
+    <!-- WISHLIST HEADER -->
+    <section class="my-5 flex items-center justify-between gap-4">
+
+        <h2 class="text-[13px] sm:text-[14px] font-normal">
+            Wishlist (4)
+        </h2>
+
+        <button
+            class="border border-gray-400 px-3 sm:px-6 py-2
+                   text-[8px] sm:text-[9px] whitespace-nowrap">
+            Move All To Bag
+        </button>
+
+    </section>
+
+
+    <!-- WISHLIST PRODUCTS -->
+    <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+               gap-6 sm:gap-5 lg:gap-[20px]"
+    >
+
+        <!-- PRODUCT 1 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- DISCOUNT -->
+                <span
+                    class="absolute top-[7px] left-[7px]
+                           rounded-sm bg-[#DB4444]
+                           px-[6px] py-[4px]
+                           text-[7px] text-white"
+                >
+                    -35%
+                </span>
+
+                <!-- DELETE -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    <img
+                        src="../images/image9.svg"
+                        alt=""
+                        class="w-5 h-5 sm:w-6 sm:h-6"
+                    >
+                </span>
+
+                <img
+                    src="../images/image1.svg"
+                    alt="Gucci duffle bag"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                Gucci duffle bag
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$960</span>
+
+                <del class="ml-[5px] text-gray-500">
+                    $1160
+                </del>
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- DELETE -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    <img
+                        src="../images/image9.svg"
+                        alt=""
+                        class="w-5 h-5 sm:w-6 sm:h-6"
+                    >
+                </span>
+
+                <img
+                    src="../images/image2.svg"
+                    alt="RGB liquid CPU Cooler"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                RGB liquid CPU Cooler
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$1960</span>
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- DELETE -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    <img
+                        src="../images/image9.svg"
+                        alt=""
+                        class="w-5 h-5 sm:w-6 sm:h-6"
+                    >
+                </span>
+
+                <img
+                    src="../images/image3.svg"
+                    alt="Gamepad"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                GP11 Shooter USB Gamepad
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$550</span>
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- DELETE -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    <img
+                        src="../images/image9.svg"
+                        alt=""
+                        class="w-5 h-5 sm:w-6 sm:h-6"
+                    >
+                </span>
+
+                <img
+                    src="../images/image4.svg"
+                    alt="Quilted Satin Jacket"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                Quilted Satin Jacket
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$750</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- JUST FOR YOU HEADER -->
+    <section
+        class="mt-10 sm:mt-12 mb-6 sm:mb-7
+               flex items-center justify-between gap-4"
+    >
+
+        <div class="flex items-center gap-[10px]">
+
+            <span
+                class="h-[20px] w-[10px]
+                       rounded-[2px] bg-[#DB4444]"
+            ></span>
+
+            <h2 class="text-[12px] sm:text-[13px] font-normal">
+                Just For You
+            </h2>
+
+        </div>
+
+        <button
+            class="border border-gray-400
+                   px-4 sm:px-6 py-2
+                   text-[8px] sm:text-[9px]
+                   whitespace-nowrap"
+        >
+            See All
+        </button>
+
+    </section>
+
+
+    <!-- RECOMMENDED PRODUCTS -->
+    <section
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+               gap-6 sm:gap-5 lg:gap-[20px]"
+    >
+
+        <!-- PRODUCT 1 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- DISCOUNT -->
+                <span
+                    class="absolute top-[7px] left-[7px]
+                           rounded-sm bg-[#DB4444]
+                           px-[6px] py-[4px]
+                           text-[7px] text-white"
+                >
+                    -35%
+                </span>
+
+                <!-- VIEW -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    ◉
+                </span>
+
+                <img
+                    src="../images/image5.svg"
+                    alt="Gaming Laptop"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                ASUS ROG Gaming Laptop
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$960</span>
+
+                <del class="ml-[5px] text-gray-500">
+                    $1160
+                </del>
+            </p>
+
+            <div class="mt-[5px] text-[10px] text-[#F5A623]">
+                ★★★★★
+                <small class="ml-1 text-gray-500">(65)</small>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- VIEW -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    ◉
+                </span>
+
+                <img
+                    src="../images/image6.svg"
+                    alt="Gaming Monitor"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                IPS LCD Gaming Monitor
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$160</span>
+            </p>
+
+            <div class="mt-[5px] text-[10px] text-[#F5A623]">
+                ★★★★★
+                <small class="ml-1 text-gray-500">(65)</small>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- NEW -->
+                <span
+                    class="absolute top-[7px] left-[7px]
+                           rounded-sm bg-[#00C853]
+                           px-[6px] py-[4px]
+                           text-[7px] text-white"
+                >
+                    NEW
+                </span>
+
+                <!-- VIEW -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    ◉
+                </span>
+
+                <img
+                    src="../images/image7.svg"
+                    alt="HAVIT Gamepad"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                HAVIT HV-G92 Gamepad
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$560</span>
+            </p>
+
+            <div class="mt-[5px] text-[10px] text-[#F5A623]">
+                ★★★★★
+                <small class="ml-1 text-gray-500">(65)</small>
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+        <div class="w-full min-w-0">
+
+            <div
+                class="relative w-full h-[280px] sm:h-[300px] lg:h-[322px]
+                       overflow-hidden bg-[#F5F5F5]
+                       flex items-center justify-center"
+            >
+
+                <!-- VIEW -->
+                <span
+                    class="absolute top-[7px] right-[7px]
+                           text-[13px] cursor-pointer"
+                >
+                    ◉
+                </span>
+
+                <img
+                    src="../images/image8.svg"
+                    alt="Wired Keyboard"
+                    class="w-[75%] h-[160px] sm:h-[180px] lg:h-[200px]
+                           object-contain"
+                >
+
+                <!-- ADD TO CART -->
+                <div
+                    class="absolute bottom-0 left-0 right-0
+                           h-9 sm:h-10
+                           bg-black text-white
+                           text-[8px] sm:text-[9px]
+                           flex items-center justify-center
+                           cursor-pointer"
+                >
+                    🛒 Add To Cart
+                </div>
+
+            </div>
+
+            <h3
+                class="mt-2 sm:mt-[10px] mb-[6px]
+                       text-[13px] sm:text-[14px] lg:text-[16px]
+                       font-normal"
+            >
+                AK-900 Wired Keyboard
+            </h3>
+
+            <p class="text-[10px] sm:text-[11px]">
+                <span class="text-[#DB4444]">$200</span>
+            </p>
+
+            <div class="mt-[5px] text-[10px] text-[#F5A623]">
+                ★★★★★
+                <small class="ml-1 text-gray-500">(65)</small>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+    <div id="target-footer"></div>
+    <script src="../js/global.js"></script>
+    <script>
+        fetch('../components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('target-header').innerHTML = data;
+                setupNavbarEvents();
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+        fetch('../components/footer.html').then(response => response.text()).then(data => {
+            document.getElementById('target-footer').innerHTML = data;
+        })
+    </script>
+</body>
+
+</html>
